@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, FileText, Ruler } from "lucide-react";
+import { Link } from "react-router-dom";
 import krattenKastImage from "@/assets/krattenkast-hero.png";
 
 interface ProductCardProps {
@@ -9,6 +10,7 @@ interface ProductCardProps {
   price: number;
   features: string[];
   image: string;
+  slug?: string;
   delay?: number;
 }
 
@@ -60,10 +62,12 @@ const ProductCard = ({
           ))}
         </ul>
 
-        <Button variant="brand" className="w-full">
-          <ShoppingCart className="h-4 w-4" />
-          Toevoegen aan winkelwagen
-        </Button>
+        <Link to="/product/krattenkast">
+          <Button variant="brand" className="w-full">
+            <ShoppingCart className="h-4 w-4" />
+            Bekijk bouwplan
+          </Button>
+        </Link>
       </div>
     </motion.div>
   );
