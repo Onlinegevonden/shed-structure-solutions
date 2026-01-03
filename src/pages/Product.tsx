@@ -10,7 +10,10 @@ import {
   Box, 
   Hammer,
   ChevronLeft,
-  Package
+  Package,
+  Shield,
+  Users,
+  Award
 } from "lucide-react";
 import {
   Accordion,
@@ -286,6 +289,73 @@ const ProductPage = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 100% Success Guarantee Section */}
+      <section className="border-t border-border py-16 lg:py-24">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mx-auto max-w-4xl"
+          >
+            <div className="rounded-2xl border-2 border-brand bg-gradient-to-br from-brand-muted/50 to-background p-8 lg:p-12">
+              <div className="mb-8 flex items-center justify-center gap-3">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand">
+                  <Shield className="h-7 w-7 text-brand-foreground" />
+                </div>
+                <h2 className="font-sora text-2xl font-bold text-foreground md:text-3xl">
+                  100% Slagingsgarantie
+                </h2>
+              </div>
+              
+              <p className="mb-8 text-center text-lg text-muted-foreground">
+                We begrijpen dat een doe-het-zelf project spannend kan zijn. Daarom hebben we 
+                dit bouwplan zo ontworpen dat <strong className="text-foreground">iedereen succesvol kan bouwen</strong> — 
+                van complete beginner tot ervaren klusser.
+              </p>
+
+              <div className="grid gap-6 md:grid-cols-3">
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-muted">
+                    <Users className="h-6 w-6 text-brand" />
+                  </div>
+                  <h3 className="mb-2 font-sora font-semibold text-foreground">
+                    Voor beginners
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Nooit eerder geklusd? Geen probleem. Elke stap is uitgelegd alsof het je eerste project is.
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-muted">
+                    <Hammer className="h-6 w-6 text-brand" />
+                  </div>
+                  <h3 className="mb-2 font-sora font-semibold text-foreground">
+                    Voor ervaren klussers
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Snelle overzichten en directe zaaglijsten zodat je meteen aan de slag kunt.
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brand-muted">
+                    <Award className="h-6 w-6 text-brand" />
+                  </div>
+                  <h3 className="mb-2 font-sora font-semibold text-foreground">
+                    Gegarandeerd succes
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Lukt het niet? 100% geld terug, geen vragen. Maar dat is nog nooit gebeurd.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
