@@ -61,18 +61,18 @@ const Footer = () => {
             <h3 className="mb-4 font-sora font-semibold text-foreground">Ondersteuning</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-foreground">
+                <a href="/faq" className="text-muted-foreground transition-colors hover:text-foreground">
                   Veelgestelde vragen
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-foreground">
+                <a href="/contact" className="text-muted-foreground transition-colors hover:text-foreground">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground transition-colors hover:text-foreground">
-                  Retourbeleid
+                <a href="/over-mij" className="text-muted-foreground transition-colors hover:text-foreground">
+                  Over mij
                 </a>
               </li>
             </ul>
