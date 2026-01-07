@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -29,13 +30,15 @@ const CTA = () => {
               Download voor €19
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-base"
-            >
-              Bekijk voorbeelden
-            </Button>
+            <Link to="/voorbeelden">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-base"
+              >
+                Bekijk voorbeelden
+              </Button>
+            </Link>
           </div>
 
           <p className="text-muted-foreground text-sm relative z-10">
